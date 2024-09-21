@@ -189,6 +189,7 @@ const New = () => {
             id="photo"
             className="form-control"
             accept="image/*"
+            // accept="video/*"
             onChange={(event) => {
               if (event.currentTarget.files[0]) {
                 setImg(event.currentTarget.files[0]);

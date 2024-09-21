@@ -54,7 +54,7 @@ const EditUser = () => {
       (snapshot) => {
         const progress =
           (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-        setImgPerc(progress);
+        setImgPerc(Math.round(progress));
       },
       (error) => {
         setError("Image upload failed.");
